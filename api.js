@@ -48,8 +48,6 @@ const search = async (msg) => {
   const arrayCommands = rawStrCmd.split(" ")
   arrayCommands.splice(0,1)
 
-  console.log(arrayCommands);
-
   if (arrayCommands.length > 2 || arrayCommands[0].length === 0) {
     msg.channel.send("Oops 🤦‍♂️! Something went wrong again. Try this command as `!search optional_flag some_string`. Make sure search string is atleast 3 characters for better results. Use flag -e to search for exchanges.");
     return

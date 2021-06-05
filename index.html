@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A Simple Discord Bot to keep you updated with the crypto world.">
+    <meta name="author" content="Prince Anuragi">
+    <link rel="icon" href="icon.ico">
+
+    <title>CryptoBot</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="main.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CryptoBot</a>
+            <button class="btn btn-outline-primary me-2" type="button" onclick={joinChannel()}>Add to Your Server</button>
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+        <br />
+        <div class="mainContent">
+          <img src="icon.png" class="img-fluid" alt="discord-image">
+          <div class="mainContent-text">
+            <h1>CryptoBot</h1>
+            <p class="lead">This is a Discord Bot which helps you to be updated with the crypto world.<br> All you get is to add it ot you discord server and start using.</p>
+            <div>
+                <button type="button" class="btn btn-primary" onclick={joinChannel()}>Add Bot to you Server</button>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <h4>Commands for Bot</h4>
+        <ul class="list-group list-group-numbered">
+            <li class="list-group-item">Root Command to call bot - ! </li>
+            <li class="list-group-item">!info `coin_id` `lang(optional)` - For Coin Info </li>
+            <li class="list-group-item">!price `coin_id` `vs_curreny` - For Coin Price </li>
+            <li class="list-group-item">!ohlc `coinid` `params` - Give you a chart for OHLC for a specific coin.</li>
+            <li class="list-group-item">!trending - Gives you Currently Trending Crypto currencies </li>
+            <li class="list-group-item">!exchange `vs_currency` - Gives exchange rate for wrt `vs_currency` </li>
+            <li class="list-group-item">!about - Give about info on Bot. </li>
+            <li class="list-group-item">!search `optional_flag search_string` - Use -e Flag to search exchanges </li>
+            <li class="list-group-item">!apid `search_string`  (Helps you find asset platform ids for contracts) </li>
+            <li class="list-group-item">!contract `asset_platform_id contract_address` (Gives you information about the specified contract) </li>
+            <li class="list-group-item">!ticker `coin_id`  (Give you information about tickers for a specific coin)  </li>
+            <li class="list-group-item">!track `coinid repeat` (You can track the price of a coin for specific amount of times which will notify you every 5 minutes) </li>
+        </ul> 
+
+    </main><!-- /.container -->
+    
+    <footer>
+      <p>Designed and Developer by <a href="https://github.com/prix0007/CryptoBot.git" >Prince Anuragi</a></p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script>
+      function joinChannel() {
+        window.open("https://discord.com/api/oauth2/authorize?client_id=848800914789236736&permissions=2148001856&scope=bot")
+      }
+    </script>
+  </body>
+</html>

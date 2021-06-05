@@ -6,6 +6,10 @@ Powered By - CoinGecko API and Replit
 ### Add this bot to you discord Server
 - [Add Bot](https://discord.com/oauth2/authorize?client_id=848800914789236736&permissions=2148001856&scope=bot)
 
+### Links
+- [Repl](https://replit.com/@PRINCEANURAGI/CryptoBot)
+- [Home](https://cryptobot.princeanuragi.repl.co/)
+- [Github](https://github.com/prix0007/CryptoBot)
 ### Supported Commands
 - Root Command to call bot - `!ping` Checks if bot is working
 - `!info coin_id lang(optional)` - For Coin Info
